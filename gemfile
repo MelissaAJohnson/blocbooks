@@ -3,3 +3,4 @@ gem 'bloc_works', "~> 0.1.0", path: "../bloc_works"
 gem "rack",  "~> 1.6"
 gem 'test-unit'
 gem 'rack-test'
+gem 'sqlite3'
