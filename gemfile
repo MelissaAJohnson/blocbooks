@@ -4,3 +4,5 @@ gem "rack",  "~> 1.6"
 gem 'test-unit'
 gem 'rack-test'
 gem 'sqlite3'
+gem 'pry', :group => :development
+gem 'rb-readline'
