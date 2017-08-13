@@ -1,10 +1,10 @@
 class BooksController < BlocWorks::Controller
   def welcome
-    render :welcome, book: "Eloquent Ruby"
+    @book = "Eloquent Ruby"
   end
   
   def index
-    render :index, books: Book.all
+    @books = Book.all
   end
 
   def create
@@ -12,8 +12,7 @@ class BooksController < BlocWorks::Controller
   end
 
   def show
-    book = Book.find(params['id'])
-    render :show, book: book
+    @book = Book.find(params['id'])
   end
 
   def new
